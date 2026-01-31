@@ -50,7 +50,9 @@ export default function PokemonCard({
       </View>
 
       <View style={styles.weaknessContainer}>
-        <Text style={styles.weaknessText}>Weakness: {weaknesses.join(", ")}</Text>
+        <Text style={styles.weaknessText}>
+          Weakness: {weaknesses.join(", ")}
+        </Text>
       </View>
     </View>
   );
@@ -58,7 +60,7 @@ export default function PokemonCard({
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "white",
+    backgroundColor: "#e0e0e0",
     borderRadius: 16,
     borderWidth: 2,
     padding: 16,
@@ -94,7 +96,7 @@ const styles = StyleSheet.create({
   },
   typeContainer: {
     alignItems: "center",
-    marginBottom:40,
+    marginBottom: 40,
   },
   badge: {
     flexDirection: "row",
@@ -117,7 +119,7 @@ const styles = StyleSheet.create({
   },
   movesText: {
     fontSize: 22,
-  fontWeight: "bold",
+    fontWeight: "bold",
   },
   weaknessContainer: {
     marginBottom: 8,
